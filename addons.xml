@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon
+  id="plugin.video.websharecrawler"
+  name="Webshare Atlas"
+  version="0.8.25"
+  provider-name="Radeco">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="sk_SK">Webshare Atlas mediálny katalóg.</summary>
+    <description lang="sk_SK">Stránkovaný Webshare mediálny katalóg s premiérovými novinkami, live metadata proxy a resolverom až pri kliknutí.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+  </extension>
+</addon>
+<addon
+  id="repository.websharecrawler"
+  name="Webshare Atlas Repository"
+  version="1.0.6"
+  provider-name="Radeco">
+  <extension point="xbmc.addon.repository" name="Webshare Atlas Repository">
+    <dir minversion="19.0.0">
+      <info compressed="false">https://radovanivanic-oss.github.io/AG_repo/addons.xml</info>
+      <checksum>https://radovanivanic-oss.github.io/AG_repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://radovanivanic-oss.github.io/AG_repo/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="sk_SK">Webshare Atlas Repository pre Kodi.</summary>
+    <description lang="sk_SK">Verejný GitHub Pages repozitár pre aktualizácie addonu Webshare Atlas.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+  </extension>
+</addon>
+</addons>
